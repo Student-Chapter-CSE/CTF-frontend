@@ -9,8 +9,8 @@ const Navbar = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const navItems = [
-    { name: "Rules", path: "/" },
-    { name: "Question", path: "/" },
+    { name: "Rules", path: "/RulesRegulation" },
+    { name: "Question", path: "/Questions" },
     { name: "Convenors", path: "/" },
     { name: "Leaderboard", path: "/leaderboard" },
   ];
