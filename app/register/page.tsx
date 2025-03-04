@@ -1,18 +1,16 @@
 import React from "react";
 import "./index.css";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/Button";
-
+import SignUpForm from "./components/Form";
 const page = () => {
   return (
     <div className=" pb-7 relative min-h-screen  flex flex-row overflow-hidden bg font-[Unlock]">
       <div className=" pt-4 w-11/12 lg:w-9/12 flex flex-col items-center gap-y-2 bg-[#F5F0E8] rounded-br-4xl">
         <div className="my-8 flex flex-col md:flex-row w-8/12 md:w-full justify-center items-center gap-x-5 gap-y-2.5">
           <Image src="/Xpedition.png" width={200} height={200} alt="logo" />
-
+          
           <div className="w-full md:w-fit flex justify-end gap-x-2 md:gap-x-5">
-            <p>By</p>
+          <p>By</p>
             <Image
               src="/sccse_logo.png"
               width={120}
@@ -23,17 +21,11 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-full h-full justify-center items-center gap-y-4">
-          <Button
-            size="lg"
-            className="bg-[#f5f5dc] text-2xl sm:text-4xl w-6/12 sm:w-7/12 text-amber-900 border border-amber-800 hover:bg-amber-100 px-8 py-2 sm:py-8 rounded-md font-medium transition-all"
-          >
-            Day 1
-          </Button>
-
-          <Button className="bg-[#f5f5dc] text-2xl sm:text-4xl w-6/12 sm:w-7/12 text-amber-900 border border-amber-800 hover:bg-amber-100 px-8 py-2 sm:py-8 rounded-md font-medium transition-all">
-            Day 2
-          </Button>
+        <div className="p-12 w-11/12 sm:w-9/12 flex flex-col gap-y-3 sm:gap-y-4">
+          <p className="pb-6 text-3xl sm:text-4xl md:text-5xl font-[Unlock] text-center">
+            Signup
+          </p>
+          <SignUpForm />
         </div>
       </div>
 
